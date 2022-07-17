@@ -1,17 +1,5 @@
 <html>
-  <head>
-Bearberis shit
-  </head>
-  <body>
-    <h1>
-bearberi's website
-    </h1>
-      <body>
-    <button onclick="sendMessage()">Send test</button>
-  </body>
-
-  </body>
-<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+ <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
   <script type="text/javascript">
 $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
   console.log(JSON.stringify(data, null, 2));
@@ -31,22 +19,5 @@ $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
   
 });
 
-
-      function sendMessage() {
-      const request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/998268046944784474/mwUqoWxtl-5wqoPgO6RV4eIB1L84m-IGbUBJV0YBunssH1lPcvWNu8MISKvx8-aWmqK5");
-
-      request.setRequestHeader('Content-type', 'application/json');
-
-      const params = {
-        username: "prisaman's niggas",
-        avatar_url: "",
-        content: 'test'
-      }
-
-      request.send(JSON.stringify(params));
-    }
-
 </script>
-  
 </html>
